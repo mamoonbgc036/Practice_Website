@@ -4,8 +4,34 @@
 	box-sizing: border-box;
 }
 
+				/*HEADER*/
 #mainheader{
 	width: 90%;
 	display: flex;
 	justify-content: space-around;
+}
+
+#mainheader li{
+	list-style: none;
+}
+
+#mainheader li a, #mainheader a{
+	text-decoration: none;
+}
+
+#logo a{
+	font-size: 25px;
+}
+
+#logo i{
+	color: #FF7800;
+}
+
+#mainheader #middle ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+#mainheader #middle ul li a{
+	font-size: 20px;
 }
