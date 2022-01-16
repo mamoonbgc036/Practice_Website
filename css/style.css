@@ -6,15 +6,12 @@
 
 				/*HEADER*/
 
-header{
-	/*position: fixed;*/
-}
 #mainheader{
 	position: fixed;
 	display: flex;
-	width: 90%;
 	margin: 0 auto;
-	padding: 20px 0;
+	padding: 20px 9%;
+	background: #fff;
 	right: 0;
 	left: 0;
 	align-self: center;
@@ -49,7 +46,8 @@ header{
 
 #mainheader #head_logo ul{
 	display: flex;
-	justify-content: space-evenly;
+	/*justify-content: center;*/
+	float: right;
 }
 
 #mainheader #logo{
@@ -62,7 +60,27 @@ header{
 	align-self: center;
 }
 
+#head_logo ul li{
+	margin: 5px;
+}
+
 #mainheader #head_logo{
 	width: 20%;
 	align-self: center;
+}
+
+#head_logo i{
+	background: #F1F3F4;
+	padding: 10px;
+	font-size: 20px;
+	border-radius: 5px;
+}
+
+#head_logo i:hover{
+	background: #FF7800;
+	color: #fff;
+}
+
+#middle a:hover{
+	color: #FF7800;
 }
