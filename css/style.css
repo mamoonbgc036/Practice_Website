@@ -11,7 +11,7 @@
 
 #mainheader #middle ul{
 	display: flex;
-	width: 80%;
+	width: 70%;
 }
 
 #mainheader #middle, #logo, #head_logo{
@@ -41,11 +41,25 @@
 	background: #F1F3F4;
 }
 
+#head_logo .fa-bars{
+	display: none;
+}
+
 @media only screen and (max-width: 900px) {
   #mainheader #middle ul{
   	display: block;
-  	position: fixed;
-  	transform: translateX(100%);
+  	 position: absolute;
+       top: 0;
+       right: 0;
+        width:30rem;
+  	/*transform: translateX(100%);*/
+  }
+  #mainheader #middle{
+  	position: relative;
+  }
+
+  #head_logo .fa-bars{
+  	display: block;
   }
 }
 
