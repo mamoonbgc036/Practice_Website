@@ -1,4 +1,4 @@
-//add to keditor-components.js
+//FOR BUTTON BACKGROUND COLOR add to keditor-components.js
 e.find("#btn-color-setting").on("change", (function (e) {
 						e.preventDefault();
 						var n = l()(this).val().toString(),
