@@ -168,3 +168,15 @@
   </section>
 </body>
 </html>
+ o = e.find("#btn-width"),
+						// s = e.find("#photo-height"),
+						// a = e.find("#maintain-aspect-ratio");
+					o.on("input", (function () {
+						var e = t.getSettingComponent().closest('section');
+							i = +this.value,
+							//alert(n.width)
+						console.log(r, "" != r), i <= 0 && (i = n.width, this.value = i), e.css({
+							width: i,
+							height: r
+						}), "" != r && (n.nonEmptyHeight = r), s.val(n.nonEmptyHeight)
+					}))
