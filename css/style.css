@@ -43,6 +43,7 @@ header #icon i{
 
 header #icon i:hover{
 	background: #FF7800;
+	color: #fff;
 }
 
 .fa-shopping-basket{
@@ -71,8 +72,11 @@ header{
   #menu{
   	position: absolute;
   	top: 55px;
-  	right: 90px;
+  	right: 10px;
   	background: #F1F3F4;
-  	width: 20%;
+  	width: 0%;
+  	transition-property: width;
+  	transition-duration: 1s;
+  	/*visibility: hidden;*/
   }
 }
