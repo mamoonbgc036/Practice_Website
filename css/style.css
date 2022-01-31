@@ -4,6 +4,12 @@
 	box-sizing: border-box;
 }
 
+body{
+	background: #EEEEEE;
+}
+
+  /*NAVBAR*/
+
 header nav{
 	display: flex;
 	justify-content: space-between;
@@ -57,12 +63,90 @@ header #icon i:hover{
 
 header{
 	position: fixed;
-	height: 50px;
+	height: 75px;
 	background: #FFFFFF;
 	top: 0;
 	right: 0;
 	left: 0;
 }
+
+/*BACKGROUND IMAGE*/
+
+#home{
+	display: flex;
+	background: url(../image/banner-bg.webp) no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	align-items: center;
+	justify-content: center;
+}
+
+#home #heading{
+	text-align: center;
+}
+
+#home h3{
+	font-size: 28px;
+}
+
+#home h3 span{
+	color: #FF7800;
+}
+
+#home p{
+	font-size: 20px;
+}
+
+#home button{
+	padding: 10px 20px;
+	font-size: 20px;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: all .8s;
+}
+
+#home h3, p, button{
+	margin: 5px 0;
+}
+
+#home button:hover{
+	background: #FF7800;
+	color: #fff;
+}
+
+/*FEATURE*/
+/*#content{
+			  display: grid;
+			    grid-template-columns: repeat(auto-fit,minmax(200px,max-content));
+			    align-items: center;
+			    justify-content: center;
+			    margin: 20px auto;
+			    width: 90%;
+		}*/
+
+#features #main{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px,max-content));
+}
+
+#features #item{
+	margin: 5px;
+	text-align: center;
+	padding: 2px;
+	outline: 1px solid #000;
+	outline-offset: -5px;
+	transition: all .8s;
+}
+
+#features #item:hover{
+	outline-offset: 0px;
+}
+
+
+
+/*RESPONSIVENESS*/
 
 @media screen and (max-width: 900px) {
   #icon .fa-bars{
