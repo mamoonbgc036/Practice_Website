@@ -13,6 +13,7 @@
 				<a href=""><i class="fas fa-shopping-basket"></i><span>Groco</span></a>
 			</div>
 			<div id="menu">
+        <i class="fa fa-window-close" aria-hidden="true"></i>
 				<a href="">Home</a>
 				<a href="">Features</a>
 				<a href="">Products</a>
@@ -30,9 +31,14 @@
 	</header>
 	<script type="text/javascript">
 		const click = document.querySelector(".fa-bars");
+    const cls = document.querySelector('.fa-window-close');
+    let handle = false;
 		click.addEventListener('click',function(){
-			document.getElementById('menu').style.width = '36%'
-		})
+      document.getElementById('menu').style.width = '240px';
+		});
+    cls.addEventListener('click', function(){
+        document.getElementById('menu').style.width = '0px';
+    })
 	</script>
 </body>
 </html>
