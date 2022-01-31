@@ -51,6 +51,10 @@ header #icon i:hover{
 	font-size: 30px;
 }
 
+.fa-window-close{
+	display: none;
+}
+
 header{
 	position: fixed;
 	height: 50px;
@@ -69,14 +73,17 @@ header{
   	display: block;
   }
 
+  .fa-window-close{
+  	display: block;
+  }
+
   #menu{
   	position: absolute;
   	top: 55px;
-  	right: 10px;
+  	right: 0px;
   	background: #F1F3F4;
   	width: 0%;
   	transition-property: width;
   	transition-duration: 1s;
-  	/*visibility: hidden;*/
   }
 }
