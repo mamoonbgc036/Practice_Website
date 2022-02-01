@@ -127,23 +127,49 @@ header{
 		}*/
 
 #features #main{
+	width: 80%;
+	margin: 0 auto;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px,max-content));
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(250px,max-content));
 }
 
 #features #item{
 	margin: 5px;
 	text-align: center;
-	padding: 2px;
+	padding: 15px;
 	outline: 1px solid #000;
 	outline-offset: -5px;
-	transition: all .8s;
+	transition: all .2s;
+	background: #FFFFFF;
 }
 
 #features #item:hover{
 	outline-offset: 0px;
 }
 
+#main a{
+	display: block;
+	cursor: pointer;
+	padding: 8px 12px;
+	background: transparent;
+	text-decoration: none;
+	border: 1px solid #000;
+	margin: 5px auto;
+	width: 70%;
+}
+
+#item img{
+	height: 62%;
+	background-size: cover;
+	justify-content: center;
+	width: 100%;
+}
+
+#main a:hover{
+	background: #FF7800;
+	color: #fff;
+}
 
 
 /*RESPONSIVENESS*/
