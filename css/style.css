@@ -65,6 +65,7 @@ header{
 	position: fixed;
 	height: 75px;
 	background: #FFFFFF;
+	z-index: 1000;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -117,46 +118,58 @@ header{
 }
 
 /*FEATURE*/
-/*#content{
-			  display: grid;
-			    grid-template-columns: repeat(auto-fit,minmax(200px,max-content));
-			    align-items: center;
-			    justify-content: center;
-			    margin: 20px auto;
-			    width: 90%;
-		}*/
 
 #features #main{
 	width: 80%;
 	margin: 0 auto;
 	display: grid;
 	justify-content: center;
-	grid-template-columns: repeat(auto-fit, minmax(250px,max-content));
+	grid-template-columns: repeat(auto-fit, minmax(350px,max-content));
 }
 
 #features #item{
 	margin: 5px;
 	text-align: center;
 	padding: 15px;
-	outline: 1px solid #000;
+	outline: 1px solid rgba(0, 0, 0, 0.1);
 	outline-offset: -5px;
 	transition: all .2s;
+	height: 380px;
+	border-radius: 8px;
 	background: #FFFFFF;
+}
+
+#features h2{
+	font-size: 30px;
+	text-align: center;
+	padding: 25px 0;
+}
+
+#features span{
+	margin-left: 15px;
+    padding: 11px 42px;
+    background: #FB6D03;
+    display: inline-block;
+    color: #fff;
+    clip-path: polygon(100% 0, 87% 50%, 100% 99%, 0% 100%, 16% 49%, 0% 0%);
 }
 
 #features #item:hover{
 	outline-offset: 0px;
+	outline: 2px solid #000;
 }
 
 #main a{
-	display: block;
-	cursor: pointer;
-	padding: 8px 12px;
-	background: transparent;
-	text-decoration: none;
-	border: 1px solid #000;
-	margin: 5px auto;
-	width: 70%;
+	  display: block;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 8px 10px;
+    background: transparent;
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 24px auto;
+    border-radius: 5px;
+    width: 62%;
 }
 
 #item img{
@@ -170,6 +183,124 @@ header{
 	background: #FF7800;
 	color: #fff;
 }
+
+.fa-star, .fa-star-half-alt{
+	color: #FB6D03;
+}
+
+/*Categories*/
+
+#categories #main{
+	width: 80%;
+	margin: 0 auto;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, minmax(250px,max-content));
+}
+
+#categories #item{
+	margin: 5px;
+	text-align: center;
+	padding: 15px;
+	outline: 1px solid rgba(0, 0, 0, 0.1);
+	outline-offset: -5px;
+	transition: all .2s;
+	height: 380px;
+	border-radius: 8px;
+	background: #FFFFFF;
+}
+
+#categories h2{
+	font-size: 30px;
+	text-align: center;
+	padding: 25px 0;
+}
+
+#categories span{
+	margin-left: 15px;
+    padding: 11px 42px;
+    background: #FB6D03;
+    display: inline-block;
+    color: #fff;
+    clip-path: polygon(100% 0, 80% 50%, 100% 99%, 0% 100%, 18% 49%, 0% 0%);
+}
+
+#categories #item:hover{
+	outline-offset: 0px;
+	outline: 2px solid #000;
+}
+
+
+.fa-star, .fa-star-half-alt{
+	color: #FB6D03;
+}
+
+/*BLOG*/
+
+#blogs h2{
+	font-size: 30px;
+	text-align: center;
+	padding: 25px 0;
+}
+
+#blogs h2 span{
+		margin-left: 15px;
+    padding: 11px 42px;
+    background: #FB6D03;
+    display: inline-block;
+    color: #fff;
+    clip-path: polygon(100% 0, 80% 50%, 100% 99%, 0% 100%, 18% 49%, 0% 0%);
+}
+
+#blogs #b_main{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px,max-content));
+	width: 80%;
+	margin: 0 auto;
+	grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+
+#b_item{
+	border-radius: 8px;
+}
+
+
+#b_main img{
+	width: 100%;
+	height: 240px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#b_main i{
+	font-size: 17px;
+	color: #FB6D03;
+}
+
+#b_main #btn{
+		padding: 12px 26px;
+    background: #FB6D03;
+    margin-top: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+#user_date{
+	display: flex;
+	justify-content: space-between;
+}
+
+#b_i_middle{
+	width: 95%;
+	margin: 0 auto;
+	padding: 8px;
+}
+
+#b_item{
+	background: #fff;
+} 
 
 
 /*RESPONSIVENESS*/
