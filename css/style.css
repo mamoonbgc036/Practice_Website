@@ -160,7 +160,7 @@ header{
 }
 
 #main a{
-	  display: block;
+	display: block;
     cursor: pointer;
     font-size: 20px;
     padding: 8px 10px;
@@ -302,6 +302,45 @@ header{
 	background: #fff;
 } 
 
+#r_main{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, max-content));
+	justify-content: center;
+	grid-gap: 8px;
+}
+
+#r_item{
+	max-width: 350px;
+	text-align: center;
+	background: #fff;
+	padding: 14px;
+	outline: 1px solid rgba(0, 0, 0, 0.1);
+	outline-offset: -8px;
+	transition: all .2s;
+}
+
+#r_item:hover{
+	outline: 1px solid #000;
+	outline-offset: 0px;
+}
+
+#r_item img{
+	border-radius: 50%;
+}
+
+#reviews h2{
+	margin: 20px 0;
+	text-align: center;
+	padding: 25px 0;
+	font-size: 25px;
+}
+
+#reviews h2 span{
+	margin-left: 5px;
+	padding: 12px 25px;
+	background: #FF7800;
+    clip-path: polygon(100% 0, 90% 50%, 100% 99%, 0% 100%, 15% 49%, 0% 0%);
+}
 
 /*RESPONSIVENESS*/
 
