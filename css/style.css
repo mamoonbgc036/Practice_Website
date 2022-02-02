@@ -342,6 +342,48 @@ header{
     clip-path: polygon(100% 0, 90% 50%, 100% 99%, 0% 100%, 15% 49%, 0% 0%);
 }
 
+/*FOOTER*/
+
+footer{
+	background: #fff;
+}
+
+#social a{
+	padding: 15px;
+	text-decoration: none;
+	background: #EEEEEE;
+	border-radius: 2px;
+}
+
+.fa-twitter, .fa-instagram, .fa-linkedin{
+	margin-left: 8px;
+}
+
+#content{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+	justify-content: center;
+	grid-gap: 15px;
+	max-width: 90%;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+#newsletter a{
+	display: block;
+}
+
+footer i{
+	font-size: 15px;
+	color: #FF7800;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+
+
 /*RESPONSIVENESS*/
 
 @media screen and (max-width: 900px) {
