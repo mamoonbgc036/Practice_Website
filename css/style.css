@@ -336,6 +336,7 @@ header{
 }
 
 #reviews h2 span{
+	display: inline-block;
 	margin-left: 5px;
 	padding: 12px 25px;
 	background: #FF7800;
@@ -357,6 +358,11 @@ footer ul li{
 	text-decoration: none;
 	background: #EEEEEE;
 	border-radius: 2px;
+}
+
+#social a:hover{
+	background: #FF7800;
+	color: #fff;
 }
 
 .fa-twitter, .fa-instagram, .fa-linkedin{
