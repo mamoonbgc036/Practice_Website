@@ -120,7 +120,7 @@ header{
 /*FEATURE*/
 
 #features #main{
-	width: 80%;
+	max-width: 86%;
 	margin: 0 auto;
 	display: grid;
 	justify-content: center;
@@ -255,10 +255,10 @@ header{
 #blogs #b_main{
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(350px,max-content));
-	width: 80%;
+	max-width: 86%;
 	margin: 0 auto;
-	grid-column-gap: 5px;
-	grid-row-gap: 5px;
+	grid-gap: 8px;
+	justify-content: center;
 }
 
 #b_item{
@@ -348,6 +348,10 @@ footer{
 	background: #fff;
 }
 
+footer ul li{
+	list-style: none;
+}
+
 #social a{
 	padding: 15px;
 	text-decoration: none;
@@ -365,8 +369,23 @@ footer{
 	justify-content: center;
 	grid-gap: 15px;
 	max-width: 90%;
-	margin: 20px auto;
-	padding: 20px;
+	margin: auto;
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+#lower{
+	max-width: 90%;
+	text-align: center;
+	margin: 0 auto
+}
+
+#lower h3{
+	padding: 15px;
+}
+
+#lower h3 span{
+	color: #FF7800;
 }
 
 #newsletter a{
@@ -380,6 +399,43 @@ footer i{
 
 footer a{
 	text-decoration: none;
+}
+
+#contact{
+	width: 350px;
+}
+
+#newsletter input{
+	height: 35px;
+}
+
+#newsletter a{
+	padding: 10px 8px;
+	background: #FF7800;
+	width: 105px;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: all .2s;
+}
+
+#links li a{
+	transition: all .2s;
+}
+
+#links li a:hover{
+	padding-left: 14px;
+}
+
+#links li{
+	margin: 10px;
+}
+
+#links li:hover{
+	margin-right: 5px;
+}
+
+#contact p{
+	margin: 10px 0;
 }
 
 
@@ -401,7 +457,7 @@ footer a{
 
   #menu{
   	position: absolute;
-  	top: 55px;
+  	top: 85px;
   	right: 0px;
   	background: #F1F3F4;
   	width: 0%;
