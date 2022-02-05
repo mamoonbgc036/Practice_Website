@@ -71,6 +71,28 @@ header{
 	left: 0;
 }
 
+
+
+form{
+	position: absolute;
+	right:-110%;
+	width: 350px;
+	background: yellow;
+	top: 80px;
+	transition: .2s;
+}
+
+form input{
+	border: none;
+	height: 50px;
+	padding: 8px;
+	width: 90%;
+}
+
+.myform{
+	right: 1%;
+}
+
 /*BACKGROUND IMAGE*/
 
 #home{

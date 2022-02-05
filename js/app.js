@@ -6,4 +6,12 @@
 		});
     cls.addEventListener('click', function(){
         document.getElementById('menu').style.width = '0px';
+    });
+
+    const search = document.querySelector(".fa-search");
+
+    const form = document.querySelector("form");
+
+    search.addEventListener('click', function(){
+        form.classList.toggle('myform');
     })
