@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+	<style type="text/css">
+		.item{
+			background: green;
+			max-width: 350px;
+			min-height: 250px;
+		}
+
+		.owl-carousel{
+			width: 80%;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+<div class="owl-carousel owl-theme">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+<script type="text/javascript">
+	var owl = $('.owl-carousel');
+	owl.owlCarousel({
+	    loop:true,
+	    margin:10,
+	    autoplay:true,
+	    autoplayTimeout:1000,
+	    autoplayHoverPause:true,
+	    responsiveClass:true,
+	    responsive:{
+	        0:{
+	            items:1,
+	            nav:true
+	        },
+	        400:{
+	            items:2,
+	            nav:false
+	        },
+	        600:{
+	            items:3,
+	            nav:false
+	        },
+	        1000:{
+	            items:5,
+	            nav:true
+	        }
+	    }
+	});
+</script>
+</body>
+</html>
